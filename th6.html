@@ -13,7 +13,7 @@
         let money = +prompt("Nhập số tiền cần vay:");
         let rate = +prompt("Lãi suất:");
         let year = +prompt("Thời hạn vay:");
-        let lsuat = money + year * (money * rate / 100);
+        let lsuat = parseInt(money) + parseInt(year * (money * rate / 100));
         document.write("Số tiền phải trả sau " + year + " năm là:" + lsuat);
     </script>
 </body>
